@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> My JavaScript Example </title>
+	<script>
+		function clickEvent() {
+			var myEvent = document.getElementById("eventexample2");
+			myEvent.innerHTML = "My text changed when you clicked the button";
+			myEvent.style.color = "green";
+			}
+			
+		function forLoop() {
+	  // This is a for loop that repeats 7 times
+			var num;
+			for (num = 1; num < 8; num++) {
+				document.getElementById("loop").innerHTML = document.getElementById("loop").innerHTML + "Loop #: " + num + "<br>";
+				console.log(num);
+				};
+			}
+	</script>
+</head>
+	
+<body>
+	<div style="background-color:yellow">
+		<!-- JavaScript Events -->
+		<p id="eventexample" style="color:green">  Click the button below to see the 'onclick' event at work 
+		</p>
+		<button onclick='document.getElementById("eventexample").innerHTML ="My text changed when you clicked the button";document.getElementById("eventexample").style.color = "red";' > On Click Event Example 
+		</button>
+	</div>
+	
+	<div style="background-color:pink">
+		<!-- JavaScript Function -->
+		<p id="eventexample2" style="color:purple">  Click the button below to see the 'onclick' event at work 
+		</p>
+		<button onclick="clickEvent()"> On Click Event Example </button>
+	</div>
+	
+	<div style="background-color:lightblue">
+	<p id="loop"> </p>
+	<button onClick="forLoop()"> Loop 7 Times </button>
+	</div>
+</body>
+
+</html>
+	
